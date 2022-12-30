@@ -19,7 +19,8 @@ aux-minivnc repository).
 
 _© 2014 David Lettier._, http://www.lettier.com/ (see 
 [Let's make a NTP Client in C](https://lettier.github.io/posts/2016-04-26-lets-make-a-ntp-client-in-c.html)).
-© 2022, Rob Mitchelmore
+
+Portions © 2022, Rob Mitchelmore
 
 ## License
 
