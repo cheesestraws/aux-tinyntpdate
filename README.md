@@ -2,19 +2,26 @@
 
 # NTP Client
 
-This NTP client is similar in nature to `ntpdate` but does not accept any command line arguments
-nor does it update the system clock. Note that this NTP client does not use any NTP libraries
-but rather works directly at the [NTP protocol level](http://tools.ietf.org/html/rfc958).  
+This is a tiny NTP client for old UNIX, primarily aimed at A/UX, but will
+probably work on anything with BSD sockets where the definitions in 
+modern_types.h are valid.
 
-Within `./source` there are two versions of the NTP client. One is written in C while the other
-one is written in Python. They both have the same functionality and are independent of one another.
-The C version uses `us.pool.ntp.org` as the NTP server while the Python version uses `pool.ntp.org`.  
+It's based on David Lettier's "Let's make an NTP client in C", but massaged
+to build under A/UX with gcc, and massaged to be closer to my own tastes
+in maintainability (with some tidy-ups like multiple initialisations of
+variables removed).
 
-For more information be sure to read
-[Let's make a NTP Client in C](https://lettier.github.io/posts/2016-04-26-lets-make-a-ntp-client-in-c.html).
+# Build
 
-_(C) 2014 David Lettier._  
-http://www.lettier.com/
+Under A/UX: tested with gcc-2.7.2 from jagubox (also available in my
+aux-minivnc repository).
+
+# Credits
+
+
+_© 2014 David Lettier._, http://www.lettier.com/ (see 
+[Let's make a NTP Client in C](https://lettier.github.io/posts/2016-04-26-lets-make-a-ntp-client-in-c.html)).
+© 2022, Rob Mitchelmore
 
 ## License
 
