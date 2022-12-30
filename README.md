@@ -1,5 +1,3 @@
-![Alt text](screenshot.jpg)
-
 # NTP Client
 
 This is a tiny NTP client for old UNIX, primarily aimed at A/UX, but will
